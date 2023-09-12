@@ -19,4 +19,4 @@ jobs:
              sudo apt-get update
 
       - name: publish kubernetes images
-        run: chmod +x ./app && ./app -v 2
+        run: chmod +x ./app && ./app -v 2 --image-repository=registry.cn-hangzhou.aliyuncs.com/wqhns --user=${{ secrets.ALI_DOCKERHUB_USERNAME }} --password=${{ secrets.ALI_DOCKERHUB_PASSWORD }}
