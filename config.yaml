@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - k8s.gcr.io/kube-controller-manager:v1.22.8
